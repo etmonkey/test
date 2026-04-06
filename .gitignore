@@ -1,4 +1,6 @@
+# customer settings
 .vscode/*
+*.swp
 
 # Prerequisites
 *.d

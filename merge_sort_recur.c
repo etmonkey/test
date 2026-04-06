@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 void merge_sort_recursive(int arr[], int reg[], int start, int end) {
     if (start >= end)
         return;
@@ -20,4 +22,14 @@ void merge_sort_recursive(int arr[], int reg[], int start, int end) {
 void merge_sort(int arr[], const int len) {
     int reg[len];
     merge_sort_recursive(arr, reg, 0, len - 1);
+}
+
+int main() {
+    int arr[] = {38, 27, 43, 3, 9, 82, 10};
+    merge_sort(arr, 7);
+    for(int i=0; i<7; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+    return 1;
 }
